@@ -5,7 +5,7 @@
 # Email: admin@hostonnet.com
 # Github: https://github.com/HostOnNet/squid-proxy-installer
 
-if cat /etc/os-release | grep PRETTY_NAME | grep "Ubuntu 16.04"; then
+if cat /etc/os-release | grep PRETTY_NAME | grep "Ubuntu 18.04.3 LTS"; then
     /usr/bin/apt update
     /usr/bin/apt -y install apache2-utils squid3
     touch /etc/squid/passwd
